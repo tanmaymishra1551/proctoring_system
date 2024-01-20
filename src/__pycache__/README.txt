@@ -1,0 +1,6 @@
+The __pycache__ folder is created and used by Python to store compiled bytecode files. When you import a module in Python, the interpreter first checks if there is a corresponding bytecode file (.pyc) in the __pycache__ folder. If the bytecode file exists and is up-to-date, Python will use it instead of recompiling the source code. This helps to improve the execution speed when importing modules.
+
+The __pycache__ folder is automatically generated in the same directory as the module's source file. It follows a specific naming convention based on the Python version and the module's name. For example, if you have a module named example.py and you are using Python 3, the bytecode file will be stored in a folder named __pycache__ as 
+example.cpython-<version>.pyc, where <version> represents the Python version.
+
+The __pycache__ folder is intended to be a cache and can be safely deleted without affecting your code or its functionality. Python will automatically regenerate the bytecode files if they are needed. It's also worth noting that the __pycache__ folder is typically excluded from version control systems (such as Git) because its contents are automatically generated and can be easily recreated.
